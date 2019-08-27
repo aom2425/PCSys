@@ -15,7 +15,7 @@ public class soundControl {
         new AsyncTask<Integer, Void, Void>(){
             protected Void doInBackground(Integer... params) {
                 try {
-                    Socket socket = new Socket("192.168.1.204", 2002);
+                    Socket socket = new Socket("xxx.xxx.x.xxx", 2002);
                     BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
                     String outMsg = "";
                     outMsg = cmd;
